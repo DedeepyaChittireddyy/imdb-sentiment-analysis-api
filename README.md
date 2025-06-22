@@ -1,4 +1,4 @@
-```markdown # IMDb Sentiment Analysis API 🎬🔍
+# IMDb Sentiment Analysis API 🎬🔍
 
 This project is a sentiment analysis API powered by a fine-tuned **DistilBERT** model using the IMDb movie review dataset. The model is served via a **FastAPI** backend and containerized using **Docker** for easy deployment.
 
@@ -16,20 +16,16 @@ This project is a sentiment analysis API powered by a fine-tuned **DistilBERT** 
 
 ## 📁 Project Structure
 
-```
-
 sentiment-analysis-bert/
 ├── app/
-│   ├── main.py                # FastAPI app
-│   ├── Dockerfile             # Docker config
+│ ├── main.py # FastAPI app
+│ ├── Dockerfile # Docker config
 ├── training/
-│   └── train.py               # Model fine-tuning script
-├── model/                     # Saved fine-tuned model (locally mounted, not committed)
+│ └── train.py # Model fine-tuning script
+├── model/ # Saved fine-tuned model (locally mounted, not committed)
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
-````
 
 ---
 
@@ -39,7 +35,6 @@ sentiment-analysis-bert/
    ```bash
    git clone https://github.com/yourusername/imdb-sentiment-analysis-api.git
    cd imdb-sentiment-analysis-api
-````
 
 2. **Create virtual environment**:
 
