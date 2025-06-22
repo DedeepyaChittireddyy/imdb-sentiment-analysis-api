@@ -1,5 +1,4 @@
-```markdown
-# IMDb Sentiment Analysis API 🎬🔍
+```markdown # IMDb Sentiment Analysis API 🎬🔍
 
 This project is a sentiment analysis API powered by a fine-tuned **DistilBERT** model using the IMDb movie review dataset. The model is served via a **FastAPI** backend and containerized using **Docker** for easy deployment.
 
