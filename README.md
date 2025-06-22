@@ -1,6 +1,6 @@
 # IMDb Sentiment Analysis API 🎬🔍
 
-This project is a sentiment analysis API powered by a fine-tuned **DistilBERT** model using the IMDb movie review dataset. The model is served via a **FastAPI** backend and containerized using **Docker** for easy deployment.
+This project is a sentiment analysis API powered by a fine-tuned **DistilBERT** model using the IMDb movie review dataset. The model is served via a **FastAPI** backend and containerized using **Docker** for easy deployment. It also includes a **Streamlit** app for an interactive web UI.
 
 ---
 
@@ -11,18 +11,19 @@ This project is a sentiment analysis API powered by a fine-tuned **DistilBERT** 
 - ✅ Hugging Face Transformers integration
 - ✅ Dockerized for local or production deployment
 - ✅ Swagger UI for easy testing
-
+- ✅ Streamlit app for interactive sentiment analysis
 ---
 
 ## 📁 Project Structure
 
 sentiment-analysis-bert/
 ├── app/
-│ ├── main.py # FastAPI app
-│ ├── Dockerfile # Docker config
+│   ├── main.py             # FastAPI app
+│   ├── streamlit_app.py    # Streamlit web app
+│   ├── Dockerfile          # Docker config
 ├── training/
-│ └── train.py # Model fine-tuning script
-├── model/ # Saved fine-tuned model (locally mounted, not committed)
+│   └── train.py            # Model fine-tuning script
+├── model/                  # Saved fine-tuned model (locally mounted, not committed)
 ├── .gitignore
 ├── requirements.txt
 └── README.md
@@ -54,6 +55,11 @@ sentiment-analysis-bert/
    ```bash
    cd app
    uvicorn main:app --reload
+   ```
+5. **Start Streamlit app (in a new terminal)**:
+
+   ```bash
+   streamlit run app/streamlit_app.py
    ```
 
 ---
