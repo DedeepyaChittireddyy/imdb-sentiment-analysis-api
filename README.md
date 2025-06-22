@@ -1,7 +1,3 @@
-Absolutely — here’s a complete, professional **README.md** for your IMDb Sentiment Analysis API project. You can copy-paste this directly into your repo:
-
----
-
 ```markdown
 # IMDb Sentiment Analysis API 🎬🔍
 
